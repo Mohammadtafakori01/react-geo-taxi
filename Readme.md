@@ -4,7 +4,6 @@
 [![License](https://img.shields.io/github/license/mohammadtafakori01/react-geo-taxi)](LICENSE)
 
 **React Geo Taxi** is a React-based package that provides an interactive map with taxi meter functionality. It allows users to search for locations, get their current position, and calculate distances with an animated taxi meter.
-![Image](https://github.com/user-attachments/assets/faf7ffbf-1142-4e66-8ff3-d742546e8b39)---
 
 ## **Features**
 ✅ Interactive map with OpenLayers  
@@ -15,6 +14,11 @@
 ✅ Live taxi meter with real-time fare calculation  
 
 ---
+
+
+![Image](https://github.com/user-attachments/assets/faf7ffbf-1142-4e66-8ff3-d742546e8b39)---
+
+
 
 ## **Installation**
 You can install the package using NPM:
