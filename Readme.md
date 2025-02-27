@@ -16,10 +16,6 @@
 ---
 
 
-![Image](https://github.com/user-attachments/assets/faf7ffbf-1142-4e66-8ff3-d742546e8b39)---
-
-
-
 ## **Installation**
 You can install the package using NPM:
 
@@ -161,3 +157,4 @@ This project is licensed under the [MIT License](LICENSE).
 ### **Star the Repo ⭐**
 If you found this package useful, consider giving it a star on [GitHub](https://github.com/mohammadtafakori01/react-geo-taxi) ⭐!
 ```
+![Image](https://github.com/user-attachments/assets/faf7ffbf-1142-4e66-8ff3-d742546e8b39)---
