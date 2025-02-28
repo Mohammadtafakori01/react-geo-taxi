@@ -12,14 +12,18 @@ import { fromLonLat, toLonLat } from "ol/proj";
 import { Style, Stroke, Circle as CircleStyle, Fill } from "ol/style";
 import SearchAndLocation from "./SearchAndLocation";
 import RouteInputs from "./RouteInputs";
-import TaxiMeter from "./TaxiMeter";
-const MapWrapper = () => {
+const MapWrapper = ({ onRouteChange }) => {
   const mapRef = useRef(null);
   const vectorSource = useRef(new VectorSource());
   const [origin, setOrigin] = useState(null);
   const [target, setTarget] = useState(null);
   const [selecting, setSelecting] = useState("origin");
   const selectingRef = useRef(selecting);
+  useEffect(() => {
+    if (onRouteChange) {
+      onRouteChange({ origin, target, distance });
+    }
+  }, [origin, target, distance, onRouteChange]);
   useEffect(() => {
     selectingRef.current = selecting;
   }, [selecting]);
@@ -203,13 +207,6 @@ const MapWrapper = () => {
           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
         }}
       />
-      <div style={{ padding: "16px" }}>
-        <TaxiMeter
-          meterofdistance={parseInt(distance)}
-          permeter={8}
-          key={distance}
-        />
-      </div>
     </div>
   );
 };

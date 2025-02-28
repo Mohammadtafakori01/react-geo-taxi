@@ -40,10 +40,13 @@ import React from "react";
 import { MapWrapper } from "@mohammadtafakori01/react-geo-taxi";
 
 const App = () => {
+   const handleRouteChange = ({ origin, target, distance }) => {
+    console.log("Route Updated:", { origin, target, distance });
+  };
   return (
     <div>
       <h1>Taxi Service Map</h1>
-      <MapWrapper />
+      <MapWrapper onRouteChange={handleRouteChange} />
     </div>
   );
 };
